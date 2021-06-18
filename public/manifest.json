@@ -1,0 +1,16 @@
+{
+  "short_name": "PolyCuban Finance",
+  "name": "PolyCuban Finance",
+  "description": "Farm CUBAN with LP Tokens",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
