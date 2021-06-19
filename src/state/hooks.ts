@@ -85,21 +85,29 @@ export const useTotalValue = (): BigNumber => {
   const farms = useFarms();
   const bnbPrice = usePriceBnbBusd();
   const cakePrice = usePriceCakeBusd();
+  // console.log(`farms`, farms)
+  // console.log(`bnbPrice`, bnbPrice)
+  // console.log(`cakePrice`, cakePrice)
   let value = new BigNumber(0);
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
-    if (farm.lpTotalInQuoteToken) {
+    if (+farm.lpTotalInQuoteToken) {
       let val;
+      // console.log(`val`, val)
+      // console.log(`farm.lpTotalInQuoteToken`, farm.lpTotalInQuoteToken)
       if (farm.quoteTokenSymbol === QuoteToken.WMATIC) {
         val = (bnbPrice.times(farm.lpTotalInQuoteToken));
       }
       if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
         val = (cakePrice.times(farm.lpTotalInQuoteToken));
-      }else{
+      } else {
+        console.log(`farm.lpTotalInQuoteToken`, farm.lpTotalInQuoteToken.toString())
         val = (farm.lpTotalInQuoteToken);
       }
       value = value.plus(val);
     }
   }
+
+  // console.log(`value`, value.toNumber())
   return value;
 }
