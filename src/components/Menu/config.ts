@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://quickswap.exchange/#/swap?outputCurrency=0x692ca411d82DeB4A96F8f89E173171b4Af83Badf',
+        href: 'https://quickswap.exchange/#/swap?outputCurrency=0x5d5aA3e0636C413473218DDF1E5a1ceCe8679B16',
       },
       {
         label: 'Liquidity',
