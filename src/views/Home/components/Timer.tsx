@@ -4,33 +4,33 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import styled from 'styled-components'
 
 const minuteSeconds = 60;
-  const hourSeconds = 3600;
-  const daySeconds = 86400;
+const hourSeconds = 3600;
+const daySeconds = 86400;
 
-  const timerProps = {
-    isPlaying: true,
-    size: 120,
-    strokeWidth: 15,
-    trailColor: "#ffc7a1"
-  };
+const timerProps = {
+  isPlaying: true,
+  size: 120,
+  strokeWidth: 15,
+  trailColor: "#ffc7a1"
+};
 
-  const renderTime = (dimension, time) => {
-    return (
-      <div className="time-wrapper">
-        <div className="time">{time}</div>
-        <div>{dimension}</div>
-      </div>
-    );
-  };
+const renderTime = (dimension, time) => {
+  return (
+    <div className="time-wrapper">
+      <div className="time">{time}</div>
+      <div>{dimension}</div>
+    </div>
+  );
+};
 
-  // eslint-disable-next-line no-bitwise
-  const getTimeSeconds = (time) => (minuteSeconds - time) | 0;
-  // eslint-disable-next-line no-bitwise
-  const getTimeMinutes = (time) => ((time % hourSeconds) / minuteSeconds) | 0;
-  // eslint-disable-next-line no-bitwise
-  const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
-  // eslint-disable-next-line no-bitwise
-  const getTimeDays = (time) => (time / daySeconds) | 0;
+// eslint-disable-next-line no-bitwise
+const getTimeSeconds = (time) => (minuteSeconds - time) | 0;
+// eslint-disable-next-line no-bitwise
+const getTimeMinutes = (time) => ((time % hourSeconds) / minuteSeconds) | 0;
+// eslint-disable-next-line no-bitwise
+const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
+// eslint-disable-next-line no-bitwise
+const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const TimerBox = styled.div`
   display: flex;
@@ -41,18 +41,16 @@ const TimerBox = styled.div`
   margin-bottom: 40px;
   `
 const Timer = () => {
-
-
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
-  const endTime = 1622634130; // use UNIX timestamp in seconds
+  const endTime = 1624547992; // use UNIX timestamp in seconds
 
   const remainingTime = endTime - stratTime;
   const days = Math.ceil(remainingTime / daySeconds);
   const daysDuration = days * daySeconds;
 
   return (
-  <TimerBox>
-    <CountdownCircleTimer
+    <TimerBox>
+      <CountdownCircleTimer
         {...timerProps}
         colors="#f48337"
         duration={daysDuration}
