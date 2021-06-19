@@ -119,7 +119,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'CUBAN',
     decimal: 18,
     lpAddresses: {
-      137: '0x007AFE958D0A26BE92E8325A3b6fCc733AB81e09'
+      137: '0x810f907385e3a8d27425365654b7234e104942c9'
     },
     tokenSymbol: 'CUBAN',
     tokenAddresses: {
