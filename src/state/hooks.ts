@@ -26,6 +26,7 @@ export const useFarms = (): Farm[] => {
 
 export const useFarmFromPid = (pid): Farm => {
   const farm = useSelector((state: State) => state.farms.data.find((f) => f.pid === pid))
+  console.log(farm.pid);
   return farm
 }
 

@@ -113,7 +113,7 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   {
-    pid: 4,
+    pid: 14,
     risk: 5,
     isTokenOnly: true,
     lpSymbol: 'CUBAN',
