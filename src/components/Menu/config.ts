@@ -35,29 +35,51 @@ const config: MenuEntry[] = [
   //   icon: 'PoolIcon',
   //   href: '/pools',
   // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
-  // {
-  //   label: 'NFT',
-  //   icon: 'NftIcon',
-  //   href: '/nft',
-  // },
+  {
+    label: 'Voting (Coming Soon)',
+    icon: 'IfoIcon',
+    href: '/lottery',
+  },
+  {
+    label: 'Vaults (Coming Soon)',
+    icon: 'NftIcon',
+    href: '/nft',
+  },
   {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
       {
-        label: 'Github',
-        href: 'https://github.com/swimming777/polycuban-frontend-main',
+        label: 'Dex Guru Chart',
+        href: 'https://dex.guru/token/0x5d5aa3e0636c413473218ddf1e5a1cece8679b16-polygon',
       },
       {
-        label: 'Docs',
-        href: 'https://polycuban.gitbook.io/polycuban/contracts/socials',
+        label: 'Polygon Scan',
+        href: 'https://polygonscan.com/address/0x5d5aA3e0636C413473218DDF1E5a1ceCe8679B16',
       },
     ]
+  },
+  {
+    label: "More",
+    icon: "MoreIcon",
+    items: [
+      // {
+      //   label: "Voting",
+      //   href: "https://voting.pancakeswap.finance",
+      // },
+      {
+        label: "Github",
+        href: "https://github.com/swimming777/polycuban-frontend-main",
+      },
+      {
+        label: "Docs",
+        href: "https://polycuban.gitbook.io/polycuban/contracts/socials",
+      },
+      // {
+      //   label: "Blog",
+      //   href: "https://goosefinance.medium.com/",
+      // },
+    ],
   },
 ]
 
