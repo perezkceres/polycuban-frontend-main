@@ -50,11 +50,15 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'QuickSwap',
-        href: 'https://info.quickswap.exchange/token/0x5d5aa3e0636c413473218ddf1e5a1cece8679b16',
-      }
-      ]
-  }
+        label: 'Github',
+        href: 'https://github.com/swimming777/polycuban-frontend-main',
+      },
+      {
+        label: 'Docs',
+        href: 'https://polycuban.gitbook.io/polycuban/contracts/socials',
+      },
+    ]
+  },
 ]
 
 export default config
