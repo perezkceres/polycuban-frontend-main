@@ -34,7 +34,7 @@ const Hero = styled.div`
     height: 100%;
     z-index: -1;
     opacity: 0.1;
-    background-image: url('/images/egg/3.png');
+    background-image: url('/images/egg/4.png');
     background-repeat: no-repeat;
     background-position: top center;
     border-radius: 30px;
@@ -56,8 +56,8 @@ const Hero = styled.div`
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.6;
-      background-image: url('/images/egg/3b.png');
+      opacity: 1;
+      background-image: url('/images/egg/4b.png');
     background-position: left center, right center;
     background-repeat: no-repeat;
     }
@@ -92,15 +92,11 @@ const Home: React.FC = () => {
 
   return (
     <Page>
-      <Heading as="h1" size="xl" mb="24px" color="secondary" >
-        <Timer />
+      <Heading as="h1" size="xl" mb="24px" color="secondary" style={{ textAlign: 'center' }} >
+        Farming starts in:
       </Heading>
-      <Hero>
-        <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'PolyCuban Finance')}
-        </Heading>
-        <Text>{TranslateString(578, 'Last generation yield farming based on polygon')}</Text>
-      </Hero>
+      <Timer />
+      <Hero />
       <div>
         <Cards>
           <FarmStakingCard />
