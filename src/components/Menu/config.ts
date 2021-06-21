@@ -38,12 +38,12 @@ const config: MenuEntry[] = [
   {
     label: 'Voting (Coming Soon)',
     icon: 'IfoIcon',
-    href: '/lottery',
+    href: '/voting',
   },
   {
     label: 'Vaults (Coming Soon)',
     icon: 'NftIcon',
-    href: '/nft',
+    href: '/vaults',
   },
   {
     label: 'Info',
